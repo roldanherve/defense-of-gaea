@@ -1,0 +1,260 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://FilamentBars.gd" type="Script" id=1]
+[ext_resource path="res://tower choice box/Boxes_/Untitled-2.png" type="Texture" id=2]
+[ext_resource path="res://tower choice box/Boxes_/Untitled-1.png" type="Texture" id=3]
+[ext_resource path="res://characters/blue/blue building/bbuild 6.png" type="Texture" id=4]
+[ext_resource path="res://characters/orange/orange building/obuild 8.png" type="Texture" id=5]
+[ext_resource path="res://characters/purple/purple building/pbuild 9.png" type="Texture" id=6]
+[ext_resource path="res://characters/red/red building/rbuild 7.png" type="Texture" id=7]
+[ext_resource path="res://tower choice box/Tower Lock/tower-3.png" type="Texture" id=8]
+[ext_resource path="res://tower choice box/Tower Lock/tower-4.png" type="Texture" id=9]
+[ext_resource path="res://tower choice box/Filament Bars/FILAMENT BARS/Blue Filament Bar/Container Shade.png" type="Texture" id=10]
+[ext_resource path="res://tower choice box/Filament Bars/FILAMENT BARS/Blue Filament Bar/Filler.png" type="Texture" id=11]
+[ext_resource path="res://tower choice box/Filament Bars/FILAMENT BARS/Orange Filament Bar/Container.png" type="Texture" id=12]
+[ext_resource path="res://tower choice box/Filament Bars/FILAMENT BARS/Orange Filament Bar/Container Shade.png" type="Texture" id=13]
+[ext_resource path="res://tower choice box/Filament Bars/FILAMENT BARS/Orange Filament Bar/Filler.png" type="Texture" id=14]
+[ext_resource path="res://tower choice box/Filament Bars/FILAMENT BARS/Purple Filament Bar/Container Shade.png" type="Texture" id=15]
+[ext_resource path="res://tower choice box/Filament Bars/FILAMENT BARS/Purple Filament Bar/Filler.png" type="Texture" id=16]
+[ext_resource path="res://tower choice box/Filament Bars/FILAMENT BARS/Red Filament Bar/Container Shade.png" type="Texture" id=17]
+[ext_resource path="res://tower choice box/Filament Bars/FILAMENT BARS/Red Filament Bar/Filler.png" type="Texture" id=18]
+
+[node name="FilamentBars" type="Control"]
+anchor_right = 1.0
+margin_right = -497.0
+margin_bottom = 152.0
+script = ExtResource( 1 )
+
+[node name="MainBar" type="Sprite" parent="."]
+position = Vector2( 253.467, 74.4562 )
+scale = Vector2( 1.592, 1.71018 )
+texture = ExtResource( 2 )
+
+[node name="Tower1" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 102, 60.83 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Tower1"]
+position = Vector2( 0, -16 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+
+[node name="Tower2" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 202, 60.83 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Tower2"]
+position = Vector2( 0, 4 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+
+[node name="Tower3" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 302, 60.83 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Tower3"]
+position = Vector2( 0, -20 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+
+[node name="Tower4" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 402, 60.83 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Tower4"]
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+
+[node name="Choice1" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 102, 60.83 )
+scale = Vector2( 0.48, 0.54 )
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Choice1"]
+position = Vector2( 0, -16 )
+scale = Vector2( 0.37, 0.37 )
+texture = ExtResource( 4 )
+
+[node name="Choice2" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 202, 60.83 )
+scale = Vector2( 0.48, 0.54 )
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Choice2"]
+position = Vector2( 0, 4 )
+scale = Vector2( 0.37, 0.37 )
+texture = ExtResource( 5 )
+
+[node name="Choice3" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 302, 60.83 )
+scale = Vector2( 0.48, 0.54 )
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Choice3"]
+position = Vector2( 0, -20 )
+scale = Vector2( 0.37, 0.37 )
+texture = ExtResource( 6 )
+
+[node name="Choice4" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 402, 60.83 )
+scale = Vector2( 0.48, 0.54 )
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Choice4"]
+scale = Vector2( 0.37, 0.37 )
+texture = ExtResource( 7 )
+
+[node name="Lock" type="Sprite" parent="."]
+position = Vector2( 304.991, 57.9241 )
+scale = Vector2( 0.139541, 0.155133 )
+texture = ExtResource( 8 )
+
+[node name="Lock2" type="Sprite" parent="."]
+position = Vector2( 406.731, 59.3161 )
+scale = Vector2( 0.138223, 0.152362 )
+texture = ExtResource( 9 )
+
+[node name="Filaments" type="TextureProgress" parent="."]
+margin_left = 145.964
+margin_top = 105.328
+margin_right = 223.964
+margin_bottom = 474.328
+rect_rotation = 90.0
+rect_scale = Vector2( 0.230879, 0.237692 )
+texture_under = ExtResource( 10 )
+texture_progress = ExtResource( 11 )
+fill_mode = 3
+
+[node name="Sprite" type="Sprite" parent="Filaments"]
+position = Vector2( 35.6566, 185.468 )
+scale = Vector2( 0.92, 0.97 )
+texture = ExtResource( 12 )
+
+[node name="Filaments2" type="TextureProgress" parent="."]
+editor/display_folded = true
+margin_left = 245.964
+margin_top = 105.328
+margin_right = 323.964
+margin_bottom = 474.328
+rect_rotation = 90.0
+rect_scale = Vector2( 0.230879, 0.237692 )
+texture_under = ExtResource( 13 )
+texture_progress = ExtResource( 14 )
+fill_mode = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Filaments2"]
+position = Vector2( 35.6566, 185.468 )
+scale = Vector2( 0.92, 0.97 )
+texture = ExtResource( 12 )
+
+[node name="Filaments3" type="TextureProgress" parent="."]
+editor/display_folded = true
+margin_left = 345.964
+margin_top = 105.328
+margin_right = 423.964
+margin_bottom = 476.328
+rect_rotation = 90.0
+rect_scale = Vector2( 0.230879, 0.237692 )
+texture_under = ExtResource( 15 )
+texture_progress = ExtResource( 16 )
+fill_mode = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Filaments3"]
+position = Vector2( 35.6566, 185.468 )
+scale = Vector2( 0.92, 0.97 )
+texture = ExtResource( 12 )
+
+[node name="Filaments4" type="TextureProgress" parent="."]
+editor/display_folded = true
+margin_left = 445.964
+margin_top = 105.328
+margin_right = 523.964
+margin_bottom = 476.328
+rect_rotation = 90.0
+rect_scale = Vector2( 0.230879, 0.237692 )
+texture_under = ExtResource( 17 )
+texture_progress = ExtResource( 18 )
+fill_mode = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Filaments4"]
+position = Vector2( 35.6566, 185.468 )
+scale = Vector2( 0.92, 0.97 )
+texture = ExtResource( 12 )
+
+[node name="Filled" type="TextureProgress" parent="."]
+margin_left = 146.0
+margin_top = 105.0
+margin_right = 224.0
+margin_bottom = 477.0
+rect_rotation = 90.0
+rect_scale = Vector2( 0.207788, 0.238505 )
+value = 100.0
+texture_under = ExtResource( 10 )
+texture_progress = ExtResource( 11 )
+fill_mode = 3
+tint_progress = Color( 0.3125, 1, 0, 1 )
+
+[node name="Filled2" type="TextureProgress" parent="."]
+margin_left = 246.0
+margin_top = 105.0
+margin_right = 324.0
+margin_bottom = 477.0
+rect_rotation = 90.0
+rect_scale = Vector2( 0.207788, 0.238505 )
+value = 100.0
+texture_under = ExtResource( 10 )
+texture_progress = ExtResource( 11 )
+fill_mode = 3
+tint_progress = Color( 0.3125, 1, 0, 1 )
+
+[node name="Filled3" type="TextureProgress" parent="."]
+margin_left = 346.0
+margin_top = 105.0
+margin_right = 424.0
+margin_bottom = 477.0
+rect_rotation = 90.0
+rect_scale = Vector2( 0.207788, 0.238505 )
+value = 100.0
+texture_under = ExtResource( 10 )
+texture_progress = ExtResource( 11 )
+fill_mode = 3
+tint_progress = Color( 0.3125, 1, 0, 1 )
+
+[node name="Filled4" type="TextureProgress" parent="."]
+margin_left = 446.0
+margin_top = 105.0
+margin_right = 524.0
+margin_bottom = 477.0
+rect_rotation = 90.0
+rect_scale = Vector2( 0.207788, 0.238505 )
+value = 100.0
+texture_under = ExtResource( 10 )
+texture_progress = ExtResource( 11 )
+fill_mode = 3
+tint_progress = Color( 0.3125, 1, 0, 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

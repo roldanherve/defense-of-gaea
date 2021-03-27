@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/obul 3.png-d29f487dbc50fe3d8653fd64b32b6cfa.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://characters/orange/orange bullet/obul 3.png"
+dest_files=[ "res://.import/obul 3.png-d29f487dbc50fe3d8653fd64b32b6cfa.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

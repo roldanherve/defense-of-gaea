@@ -1,0 +1,133 @@
+[gd_scene load_steps=54 format=2]
+
+[ext_resource path="res://Tower.gd" type="Script" id=1]
+[ext_resource path="res://characters/orange/orange tower/otower 1.png" type="Texture" id=2]
+[ext_resource path="res://characters/orange/orange tower/otower 2.png" type="Texture" id=3]
+[ext_resource path="res://characters/orange/orange tower/otower 3.png" type="Texture" id=4]
+[ext_resource path="res://characters/orange/orange tower/otower 4.png" type="Texture" id=5]
+[ext_resource path="res://characters/orange/orange tower/otower 5.png" type="Texture" id=6]
+[ext_resource path="res://characters/orange/orange tower/otower 6.png" type="Texture" id=7]
+[ext_resource path="res://characters/orange/orange tower/otower 7.png" type="Texture" id=8]
+[ext_resource path="res://characters/orange/orange building/obuild 1.png" type="Texture" id=9]
+[ext_resource path="res://characters/orange/orange building/obuild 2.png" type="Texture" id=10]
+[ext_resource path="res://characters/orange/orange building/obuild 3.png" type="Texture" id=11]
+[ext_resource path="res://characters/orange/orange building/obuild 4.png" type="Texture" id=12]
+[ext_resource path="res://characters/orange/orange building/obuild 5.png" type="Texture" id=13]
+[ext_resource path="res://characters/orange/orange building/obuild 6.png" type="Texture" id=14]
+[ext_resource path="res://characters/orange/orange building/obuild 7.png" type="Texture" id=15]
+[ext_resource path="res://characters/orange/orange building/obuild 8.png" type="Texture" id=16]
+[ext_resource path="res://characters/blue/blue tower/cannon 1.png" type="Texture" id=17]
+[ext_resource path="res://characters/blue/blue tower/cannon 2.png" type="Texture" id=18]
+[ext_resource path="res://characters/blue/blue tower/cannon 3.png" type="Texture" id=19]
+[ext_resource path="res://characters/purple/purple building/pbuild 1.png" type="Texture" id=20]
+[ext_resource path="res://characters/purple/purple building/pbuild 2.png" type="Texture" id=21]
+[ext_resource path="res://characters/purple/purple building/pbuild 3.png" type="Texture" id=22]
+[ext_resource path="res://characters/purple/purple building/pbuild 4.png" type="Texture" id=23]
+[ext_resource path="res://characters/purple/purple building/pbuild 5.png" type="Texture" id=24]
+[ext_resource path="res://characters/purple/purple building/pbuild 6.png" type="Texture" id=25]
+[ext_resource path="res://characters/purple/purple building/pbuild 7.png" type="Texture" id=26]
+[ext_resource path="res://characters/purple/purple building/pbuild 8.png" type="Texture" id=27]
+[ext_resource path="res://characters/purple/purple building/pbuild 9.png" type="Texture" id=28]
+[ext_resource path="res://characters/red/red building/rbuild 1.png" type="Texture" id=29]
+[ext_resource path="res://characters/red/red building/rbuild 2.png" type="Texture" id=30]
+[ext_resource path="res://characters/red/red building/rbuild 3.png" type="Texture" id=31]
+[ext_resource path="res://characters/red/red building/rbuild 4.png" type="Texture" id=32]
+[ext_resource path="res://characters/red/red building/rbuild 5.png" type="Texture" id=33]
+[ext_resource path="res://characters/red/red building/rbuild 6.png" type="Texture" id=34]
+[ext_resource path="res://characters/red/red building/rbuild 7.png" type="Texture" id=35]
+[ext_resource path="res://characters/blue/blue building/bbuild .png" type="Texture" id=36]
+[ext_resource path="res://characters/blue/blue building/bbuild 1.png" type="Texture" id=37]
+[ext_resource path="res://characters/blue/blue building/bbuild 2.png" type="Texture" id=38]
+[ext_resource path="res://characters/blue/blue building/bbuild 3.png" type="Texture" id=39]
+[ext_resource path="res://characters/blue/blue building/bbuild 4.png" type="Texture" id=40]
+[ext_resource path="res://characters/blue/blue building/bbuild 5.png" type="Texture" id=41]
+[ext_resource path="res://characters/blue/blue building/bbuild 6.png" type="Texture" id=42]
+[ext_resource path="res://characters/red/red tower/red tower 1.png" type="Texture" id=43]
+[ext_resource path="res://characters/red/red tower/red tower 2.png" type="Texture" id=44]
+[ext_resource path="res://characters/red/red tower/red tower 3.png" type="Texture" id=45]
+[ext_resource path="res://characters/red/red tower/red tower 4(1).png" type="Texture" id=46]
+[ext_resource path="res://characters/red/red tower/red tower 4.png" type="Texture" id=47]
+[ext_resource path="res://characters/purple/purple tower/ptower 1.png" type="Texture" id=48]
+[ext_resource path="res://characters/purple/purple tower/ptower 2.png" type="Texture" id=49]
+[ext_resource path="res://characters/purple/purple tower/ptower 3.png" type="Texture" id=50]
+[ext_resource path="res://music/remove.wav" type="AudioStream" id=51]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "tower2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": false,
+"name": "build2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "tower1",
+"speed": 2.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "build3",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ) ],
+"loop": false,
+"name": "build4",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ) ],
+"loop": false,
+"name": "build1",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 45 ), ExtResource( 44 ) ],
+"loop": true,
+"name": "tower4",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 49 ) ],
+"loop": true,
+"name": "tower3",
+"speed": 3.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 21.5924
+height = 17.0661
+
+[node name="Tower" type="Area2D"]
+collision_layer = 2
+collision_mask = 9
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.15, 0.15 )
+frames = SubResource( 1 )
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="Bullet_Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Orange_Bullet_Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="Build_Timer" type="Timer" parent="."]
+
+[node name="Build_Tower" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 51 )
+[connection signal="timeout" from="Bullet_Timer" to="." method="_on_Bullet_Timer_timeout"]
+[connection signal="timeout" from="Orange_Bullet_Timer" to="." method="_on_Orange_Bullet_Timer_timeout"]
+[connection signal="timeout" from="Build_Timer" to="." method="_on_Build_Timer_timeout"]

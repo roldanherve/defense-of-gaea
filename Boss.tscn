@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Boss.gd" type="Script" id=1]
+[ext_resource path="res://characters/boss/boss 1.png" type="Texture" id=2]
+[ext_resource path="res://characters/boss/boss 2.png" type="Texture" id=3]
+[ext_resource path="res://characters/boss/boss 3.png" type="Texture" id=4]
+[ext_resource path="res://characters/boss/boss 4.png" type="Texture" id=5]
+[ext_resource path="res://music/slime(monster).wav" type="AudioStream" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 4.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 132.74
+height = 138.584
+
+[node name="Monster" type="Area2D" groups=[
+"monster",
+]]
+position = Vector2( 990, 300 )
+scale = Vector2( 0.798645, 0.798645 )
+collision_layer = 8
+collision_mask = 22
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 24.3042, 5.34546 )
+scale = Vector2( 0.6, 0.6 )
+frames = SubResource( 1 )
+frame = 4
+playing = true
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Attack_Timer" type="Timer" parent="."]
+
+[node name="Dying_Timer" type="Timer" parent="."]
+
+[node name="Monster_Sound(0)" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+
+[node name="Visibility" type="VisibilityNotifier2D" parent="."]
+[connection signal="area_entered" from="." to="." method="_on_Monster_area_entered"]
+[connection signal="timeout" from="Attack_Timer" to="." method="_on_Attack_Timer_timeout"]
+[connection signal="timeout" from="Dying_Timer" to="." method="_on_Dying_Timer_timeout"]
+[connection signal="screen_exited" from="Visibility" to="." method="_on_Visibility_screen_exited"]
