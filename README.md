@@ -5,7 +5,6 @@ Defense of Gaea is a fast, arcade-style action game with no timeouts
 ![Defense of Gaea](demo/dog.gif)
 
 ## Gameplay
----
 > Players will continue to play until all of the plastic monsters have been killed or until the plastic monsters kill them
 
 **Overall Goal:** Complete all levels of defending the homebase and defeating all plastic monsters
@@ -17,11 +16,9 @@ Defense of Gaea is a fast, arcade-style action game with no timeouts
 ![Gameplay](demo/dog_gameplay.gif)
 
 ## Controls
----
  - Easy to learn and play with `WASD` or arrow key controls 
  - Combined with building game controls (`Q` to switch, `E` to build, and `R` to remove keys)
 
 ## Tech Used
----
 - GDScript
 - Godot Engine
